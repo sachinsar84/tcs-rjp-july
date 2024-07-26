@@ -7,11 +7,8 @@ resource "aws_instance" "inst-name" {
     ami = "ami-0b72821e2f351e396"
   instance_type = "t2.micro"
   tags = {
-    Name = var.ins-name
+    Name = "sachin-vm"
   }
   
 }
 
-output "eip-sachin" {
-  value = aws_eip.name
-}
